@@ -8,7 +8,7 @@ export default class Mongo {
 	}
 
 	connect = async () => {
-		const url = 'mongodb://172.17.0.2:27017/';
+		const url = 'mongodb://172.21.156.78:27017/';
 		this.client.connect(url);
 
 		this.client.connection.once('open', () => {
